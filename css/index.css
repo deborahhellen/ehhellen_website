@@ -1,0 +1,15 @@
+.main_img img {
+	width:100%;
+}
+
+@media only screen and (min-width:  64.063em) {
+	.main_blurb{
+		width:100%;
+	}
+
+	.main_img img {
+		height:4em;
+		width:100%;
+	}
+
+}
