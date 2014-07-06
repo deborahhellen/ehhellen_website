@@ -9,7 +9,7 @@
     <meta name="keywords" content="diode capacitor circuit, logistic, real-time bifurcation, Pade-Laplace, logarithmic decay, de la rive tube, signal averaging, Padé-Laplace">
     <link rel="shortcut icon" href="../../assets/ico/favicon.ico">
 
-    <title>Test Homepage</title>
+    <title>Research</title>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/base.css" rel="stylesheet">
 
@@ -32,11 +32,306 @@
             <li><a href="/">Home</a></li>
             <li class="active"><a href="/research.html">Research</a></li>
             <li><a href="/publications.html">Publications</a></li>
-            <li><a href="#other">Other Stuff</a></li>
+            <li><a href="/otherstuff.html">Other Stuff</a></li>
           </ul>
         </div><!--/.nav-collapse -->
       </div>
     </div>
 
+    <div class = "container">
+      <div class = "main_blurb">
+            <h1>Non-linear Dynamics</h1>
 
+      <h3>Chaotic Systems</h3>
+      <p>Real-time bifurcation diagrams produced from analog electronic circuits. Simple quadratic equations used in finite-difference recursion relations display a wide variety of behaviors including chaos.<br><a href="research_links/HellenAJPApril04.pdf">Click for article (pdf)</a> or <a href="http://link.aip.org/link/?ajp/72/499"TARGET="_blank">Edward H. Hellen, Am. J. Phys. <b>72</b>, 499(2004)</a>.</p>
+    
+    <div class = "row" align="center">
+      <div class = "col-md-6" align="center"> <img src="Scope89sm.JPG" alt="logistic bifurcation" width="183" height="147"> <br>
+        <a href="Scope76.jpg">Large version</a> </div>
+
+      <div class = "col-md-6" align= "center"><img src="Scope66sm.JPG" alt="henon bifurcation" width="179" height="144"> <br>
+        <a href="Scope52.jpg"> Large version</a></div>
+      </div>
+      <br>
+      <br>
+    <div class = "row" align="center">
+        <div class = "col-md-6" align="center"><a href="research_links/Logistic.htm">Logistic Equation:</a><br>          
+          <img class = "logistic_img" src="research_links/image004.gif" title=""alt="logistic"></p>
+        </div>
+        <div class = "col-md-6" align="center">H&eacute;non Equation (1-dim):<br>
+          <img class = "henon_eq" src="research_links/image006.gif" alt="Henon"></p>
+        </div>
+      </div>
+    </div>
+
+    </div>
+
+      <h3>Control of chaos</h3>
+    <div class = "row" align="center">
+        <div class = "col-md-8">
+          <!--TODO: text needs to be left-justified in desktop view and centered in mobile-->
+              <div><p>Deterministic chaos (as produced by the above examples) can be controlled by small perturbations of a system parameter (<em>R</em> or <em>a</em>).  We derive the transient response for chaos control based on the first difference of the system variable, (x<sub>n</sub> &minus; x<sub>n-1</sub>), and verify it experimentally. Graph shows measurements of system values and control parameter taken from controlled H&eacute;non electronic circuit.<br>
+      Here is an arXiv Eprint: <a href="http://arxiv.org/abs/0807.2637"TARGET="_blank">J.K. Thomas and E.H. Hellen</a> </p>
+              <p><a href="research_links/Keiths_c.png">Close-up</a> of bifurcation data recorded from Keith's H&eacute;non circuit. Shows period doubling from 4 to 8, period-3, period-5, and period-6 regions.</p>
+          </div>
+        </div>
+        <div class = "col-md-4">
+            <div><img src="control_fig_sm2.png" alt="chaos control" width="210" height="147"></div>
+        </div>
+        <br><br>
+        <div class = "col-md-8">
+          <div><p>In addition to stabilizing a single fixed point, it is also possible to stabilize unstable periodic orbits.  Here we show numerical simulation of control of Period-2 oscillation. System values are red. Perturbations to control parameter are green. Control was turned on at 50, off at 200, back on at 250.</p>
+          </div>
+        </div>
+        <div class = "col-md-4"><div align="center"><img src="period-2_control1sm.png" alt="chaos control" width="210" height="147"></div></td>
+        </div>
+      </div>
+
+    </div>
+    <div class = "divider"></div>
+    <div class = "blurb"> 
+      <h3>Excitable Systems</h3>
+        <table width="100%" border="0" align="center">
+        <tr> 
+         <td width="80%"> 
+        <p>Fitzhugh-Nagumo. 
+        Here are a couple of VPython avi movies. <a href="research_links/fitzhugh-nagumo.avi">Fitzhugh-Nagumo1</a> 
+        (shows phase-space), <a href="research_links/fitzhugh5.avi">Fitzhugh-Nagumo2</a><a href="fitzhugh-nagumo.avi"> 
+        </a>(shows phase-space and time evolution). The system includes both a steady 
+        leakage current and a pulsed stimulation. Here is a spatiotemporal version showing 
+        propagation of excitations too close together: <a href="research_links/fitz_diffuse5.avi">Fitz-Nag_Diffusion</a></p>
+        <p>Modeling Excitable Systems: Reentrant Tachycardia <a href="http://link.aip.org/link/?ajp/78/56">AJP <B>78</B>, 56(2010) J.L. Lancaster, E.M. Leise, and E.H. Hellen</a> or <a href="research_links/AJPJan2010.pdf">pdf</a>. Describes electronic and mathematical models, used to model a cardiac arrhythmia and its treatment.  Here is <a href="research_links/spice.html">SPICE</a> prediction for the 3-transistor circuit. Uses <a href="research_links/ebers-moll.html">Ebers-Moll model</a> of <em>npn</em> transistor.</p>
+        </td>
+        <td width="20%"> <div align="center"><img src="fn_time_sm.png" alt="fitzhugh-nagumo" width="210" height="147"></div></td>
+      </tr>
+    </table>
+    </div>
+    <div class = "divider"></div>
+    <div class = "blurb">
+      <h3>Genetic Network Modeling</h3>
+      <p>Synthetic genetic networks can be constructed to perform desired functions.  We explore potential dynamics of these networks by using numerical and electronic models. </p>
+          <p>Hellen, Edward H.; Dana, Syamal K.; Kurths, Juergen; Kehler*, Elizabeth; Sinha, Sudeshna. (2013) Noise-Aided Logic in an Electronic Analog of Synthetic Genetic Networks. PLOS ONE  Volume: 8   Issue: 10     Article Number: e76032   Published: OCT 4 2013 <a href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0076032">10.1371/journal.pone.0076032</a></p>
+    <p>Hellen, Edward H.; Dana, Syamal K.; Zhurov, Boris; Volkov, Evgeny. (2013) Electronic Implementation of a Repressilator with Quorum Sensing Feedback. PLOS ONE  Volume: 8   Issue: 5     Article Number: e62997   Published: MAY 2 2013 <a href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0062997">10.1371/journal.pone.0062997</a></p>
+      <p>Hellen EH, Volkov E, Kurths J, Dana SK (2011) An Electronic Analog of Synthetic Genetic Networks. PLoS ONE 6(8): e23286. doi:10.1371/journal.pone.0023286 <a href="http://www.plosone.org/article/info%3Adoi%2F10.1371%2Fjournal.pone.0023286">10.1371/journal.pone.0023286</a></p><br>
+       <table width="100%">
+        <tr>
+          <td> <span class = "caption">&alpha; = 176, <em>n</em> = 4.1 </br>&beta; ratio = 0.45:0.1:0.1 </br>
+          <em>k</em><sub>0</sub> = 1, <em>k</em><sub>1</sub> = 0.01 </br>&eta; = 2, &kappa; &asymp; 10
+          </br>Q varied</span></td>
+          <td> <div align="left">
+            <p>
+            <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="320" height="240" id="FLVPlayer">
+                 <param name="movie" value="FLVPlayer_Progressive.swf" />
+                 <param name="quality" value="high" />
+                 <param name="wmode" value="opaque" />
+                 <param name="scale" value="noscale" />
+                 <param name="salign" value="lt" />
+                 <param name="FlashVars" value="&amp;MM_ComponentVersion=1&amp;skinName=Clear_Skin_1&amp;streamName=research_links/cpl_a176_n41&amp;autoPlay=false&amp;autoRewind=false" />
+                 <param name="swfversion" value="8,0,0,0" />
+                 <!-- This param tag prompts users with Flash Player 6.0 r65 and higher to download the latest version of Flash Player. Delete it if you don’t want users to see the prompt. -->
+                 <param name="expressinstall" value="../Scripts/expressInstall.swf" />
+                 <!-- Next object tag is for non-IE browsers. So hide it from IE using IECC. -->
+                 <!--[if !IE]>-->
+                 <object type="application/x-shockwave-flash" data="FLVPlayer_Progressive.swf" width="320" height="240">
+                   <!--<![endif]-->
+                   <param name="quality" value="high" />
+                   <param name="wmode" value="opaque" />
+                   <param name="scale" value="noscale" />
+                   <param name="salign" value="lt" />
+                   <param name="FlashVars" value="&amp;MM_ComponentVersion=1&amp;skinName=Clear_Skin_1&amp;streamName=research_links/cpl_a176_n41&amp;autoPlay=false&amp;autoRewind=false" />
+                   <param name="swfversion" value="8,0,0,0" />
+                   <param name="expressinstall" value="../Scripts/expressInstall.swf" />
+                   <!-- The browser displays the following alternative content for users with Flash Player 6.0 and older. -->
+                   <div>
+                     <h4>Content on this page requires a newer version of Adobe Flash Player.</h4>
+                     <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" /></a></p>
+                     </div>
+                   <!--[if !IE]>-->
+                   </object>
+                 <!--<![endif]-->
+                 </object>
+            </p>
+          </div></td>
+          <td> <span class = "caption">&alpha; = 176, <em>n</em> = 4.1 </br>&beta; ratio = 0.45:0.1:0.1 </br>
+          <em>k</em><sub>0</sub> = 1, <em>k</em><sub>1</sub> = 0.01 </br>&eta; = 2, &kappa; &asymp; 10
+          </br>Q = 0.23</span></td>
+
+          <td>  <div align="left">
+            <p>
+            <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="320" height="240" id="FLVPlayer">
+                 <param name="movie" value="FLVPlayer_Progressive.swf" />
+                 <param name="quality" value="high" />
+                 <param name="wmode" value="opaque" />
+                 <param name="scale" value="noscale" />
+                 <param name="salign" value="lt" />
+                 <param name="FlashVars" value="&amp;MM_ComponentVersion=1&amp;skinName=Clear_Skin_1&amp;streamName=research_links/cpl_Qpt23_a176_n41&amp;autoPlay=false&amp;autoRewind=false" />
+                 <param name="swfversion" value="8,0,0,0" />
+                 <!-- This param tag prompts users with Flash Player 6.0 r65 and higher to download the latest version of Flash Player. Delete it if you don’t want users to see the prompt. -->
+                 <param name="expressinstall" value="../Scripts/expressInstall.swf" />
+                 <!-- Next object tag is for non-IE browsers. So hide it from IE using IECC. -->
+                 <!--[if !IE]>-->
+                 <object type="application/x-shockwave-flash" data="FLVPlayer_Progressive.swf" width="320" height="240">
+                   <!--<![endif]-->
+                   <param name="quality" value="high" />
+                   <param name="wmode" value="opaque" />
+                   <param name="scale" value="noscale" />
+                   <param name="salign" value="lt" />
+                   <param name="FlashVars" value="&amp;MM_ComponentVersion=1&amp;skinName=Clear_Skin_1&amp;streamName=research_links/cpl_Qpt23_a176_n41&amp;autoPlay=false&amp;autoRewind=false" />
+                   <param name="swfversion" value="8,0,0,0" />
+                   <param name="expressinstall" value="../Scripts/expressInstall.swf" />
+                   <!-- The browser displays the following alternative content for users with Flash Player 6.0 and older. -->
+                   <div>
+                     <h4>Content on this page requires a newer version of Adobe Flash Player.</h4>
+                     <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" /></a></p>
+                     </div>
+                   <!--[if !IE]>-->
+                   </object>
+                 <!--<![endif]-->
+                 </object>
+            </p>
+          </div></td>
+        </tr>
+
+        <tr>
+          <td><span class = "caption">&alpha; &asymp; 88, <em>n</em> &asymp; 2.5<sup>+</sup> </br>&beta;'s = 0.1 </br> 
+            <em>k</em><sub>0</sub> = 1, <em>k</em><sub>1</sub> = 0.025 </br>&eta; = 2, &kappa; increases</br>Q = 0</span></td>
+          <td> 
+            <div align="left">
+              <p>
+              <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="320" height="240" id="FLVPlayer">
+                 <param name="movie" value="FLVPlayer_Progressive.swf" />
+                 <param name="quality" value="high" />
+                 <param name="wmode" value="opaque" />
+                 <param name="scale" value="noscale" />
+                 <param name="salign" value="lt" />
+                 <param name="FlashVars" value="&amp;MM_ComponentVersion=1&amp;skinName=Clear_Skin_1&amp;streamName=research_links/ipb&amp;autoPlay=false&amp;autoRewind=false" />
+                 <param name="swfversion" value="8,0,0,0" />
+                 <!-- This param tag prompts users with Flash Player 6.0 r65 and higher to download the latest version of Flash Player. Delete it if you don’t want users to see the prompt. -->
+                 <param name="expressinstall" value="../Scripts/expressInstall.swf" />
+                 <!-- Next object tag is for non-IE browsers. So hide it from IE using IECC. -->
+                 <!--[if !IE]>-->
+                 <object type="application/x-shockwave-flash" data="FLVPlayer_Progressive.swf" width="320" height="240">
+                   <!--<![endif]-->
+                   <param name="quality" value="high" />
+                   <param name="wmode" value="opaque" />
+                   <param name="scale" value="noscale" />
+                   <param name="salign" value="lt" />
+                   <param name="FlashVars" value="&amp;MM_ComponentVersion=1&amp;skinName=Clear_Skin_1&amp;streamName=research_links/ipb&amp;autoPlay=false&amp;autoRewind=false" />
+                   <param name="swfversion" value="8,0,0,0" />
+                   <param name="expressinstall" value="../Scripts/expressInstall.swf" />
+                   <!-- The browser displays the following alternative content for users with Flash Player 6.0 and older. -->
+                   <div>
+                     <h4>Content on this page requires a newer version of Adobe Flash Player.</h4>
+                     <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" /></a></p>
+                     </div>
+                   <!--[if !IE]>-->
+                   </object>
+                 <!--<![endif]-->
+                 </object>
+              </p>
+          </div></td>
+
+          <td><span class = "caption">&alpha; &asymp; 88, <em>n</em> &asymp; 2.5 </br>&beta;'s = 0.1 </br>
+            <em>k</em><sub>0</sub> = 1, <em>k</em><sub>1</sub> = 0.025 </br>&eta; = 2, &kappa; increases</br>Q = 0</span></td>
+          <td> 
+            <div align="left">
+              <p>
+              <object classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="320" height="240" id="FLVPlayer">
+                 <param name="movie" value="FLVPlayer_Progressive.swf" />
+                 <param name="quality" value="high" />
+                 <param name="wmode" value="opaque" />
+                 <param name="scale" value="noscale" />
+                 <param name="salign" value="lt" />
+                 <param name="FlashVars" value="&amp;MM_ComponentVersion=1&amp;skinName=Clear_Skin_1&amp;streamName=research_links/amp_dec&amp;autoPlay=false&amp;autoRewind=false" />
+                 <param name="swfversion" value="8,0,0,0" />
+                 <!-- This param tag prompts users with Flash Player 6.0 r65 and higher to download the latest version of Flash Player. Delete it if you don’t want users to see the prompt. 
+                 <param name="expressinstall" value="../Scripts/expressInstall.swf" />
+                 <!-- Next object tag is for non-IE browsers. So hide it from IE using IECC. -->
+                 <!--[if !IE]>-->
+                 <object type="application/x-shockwave-flash" data="FLVPlayer_Progressive.swf" width="320" height="240">
+                   <!--<![endif]-->
+                   <param name="quality" value="high" />
+                   <param name="wmode" value="opaque" />
+                   <param name="scale" value="noscale" />
+                   <param name="salign" value="lt" />
+                   <param name="FlashVars" value="&amp;MM_ComponentVersion=1&amp;skinName=Clear_Skin_1&amp;streamName=research_links/amp_dec&amp;autoPlay=false&amp;autoRewind=false" />
+                   <param name="swfversion" value="8,0,0,0" />
+                   <!--<param name="expressinstall" value="../Scripts/expressInstall.swf" />
+                   <!-- The browser displays the following alternative content for users with Flash Player 6.0 and older. 
+                   <div>
+                     <h4>Content on this page requires a newer version of Adobe Flash Player.</h4>
+                     <p><a href="http://www.adobe.com/go/getflashplayer"><img src="http://www.adobe.com/images/shared/download_buttons/get_flash_player.gif" alt="Get Adobe Flash player" /></a></p>
+                     </div>
+                   <!--[if !IE]>-->
+                   </object>
+                 <!--<![endif]-->
+                 </object>
+            </p>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+    <div class = "divider"></div>
+    <div class = "blurb">
+      <h3>Nonlinear Damping of the LC Circuit using Anti-parallel Diodes</h3>
+      <p>Interesting amplitude 
+      dependent behavior occurs when anti-parallel diodes replace the resistor in 
+      a RLC circuit. The circuit becomes a nonlinearly damped harmonic oscillator 
+      obeying the equation:<br>
+        <table width="100%" border="0">
+        <tr>
+          <td><div align="center"><img src="research_links/diodesLC.png"></div></td>
+          <td><p>where</p></td><td><img src="research_links/diodesLCcases.png"></td>
+        </tr></table></p>
+      <p>More <a href="http://www.uncg.edu/phy/hellen/Nonlinear Damping/">info</a>. 
+      or get article <a href="http://link.aip.org/link/?ajp/75/326"TARGET="_blank">Hellen and Lanctot, 
+      Am. J. Phys. <b>75</b>, 326(2007)</a> Or <a href="research_links/AJPApril07.pdf">click for pdf</a></p>
+    </div>
+    <div class = "divider"></div>
+    <div class = "blurb">
+    <h3>Logarithmic Decay</h3>
+      <p>Diode-capacitor circuit.&nbsp; What happens when the resistor 
+      in an RC decay circuit is replaced by a diode?&nbsp; The decay changes from 
+      exponential to logarithmic.&nbsp; (At least to a good approximation for 5 
+      decades of time.)</p>
+      <p><a href="DiodeDecay.htm">Click for more on Diode-Capacitor 
+      Decay.</a> For reprint of article, <a href="research_links/HellenAJPAug03.pdf">Click here 
+      (pdf)</a> or, this article may also be found at <a href="http://link.aip.org/link/?ajp/71/797"TARGET="_blank">Edward 
+      H. Hellen, Am. J. Phys. <b>71</b>, 797(2003)</a>.</p>
+    </div>
+    <div class = "divider"></div>
+    <div class = "blurb">
+      <h3>Lorenz Chaotic Attractor</h3>
+      <p>Jarrett Lancaster did this one night in the lab. Click <a href="research_links/lorenz.html">here</a> for more info.</br>
+        <table>
+        <tr>
+          <td><div align="center"><img src="lorenz2sm.jpg"></div></td>
+          <td><div align="center"><img src="research_links/lorenz_pysm.png"></div></td>
+        </tr></table></p>
+    </div>
+    <div class = "divider"></div>
+    <div class = "blurb">
+      <h3>Pad&eacute;-Laplace Curve-Fitting and Signal Averaging</h3>
+      <p>Pade-Laplace is an intriguing method for finding the decay 
+      constants in a multi-exponential decay. Unlike standard methods of curve-fitting, 
+      it does not use the sum of the square of the errors and does not assume the 
+      number of decay constants. Instead it uses Laplace transforms, Pade approximants, 
+      Taylor series expansion, matrix inversion, and finding the zeroes of polynomials 
+      in order to determine the number of decay constants, their values, and their 
+      amplitudes. <a href="http://www.uncg.edu/phy/hellen/pade_laplace/pade-laplace.html">How it works</a></p>
+      <p>Here Pad&eacute-Laplace analysis is used on signal averaged data 
+      obtained from a simple circuit that produces multi-exponential voltage decays 
+      in the presence of noise. <a href="research_links/HellenAJPSept05.pdf">Click for article 
+      (pdf)</a> or <a href="http://link.aip.org/link/?ajp/73/871"TARGET="_blank"> Edward H. Hellen, 
+      Am. J. Phys. <b>73</b>, 871(2005).</a></p>
+    </div>
+  </div>
+ 
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
   </body>
+</html>
